@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenWrap Emporium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="icon">
+                <img src="images/green.svg" alt="GreenWrap Emporium Icon">
+            </div>
+            <h1>GreenWrap Emporium</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Cart <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="video-background">
+            <video autoplay muted loop>
+                <source src="./videos/bg.mp4" type="video/mp4">
+
+            </video>
+        </div>
+        <div class="hero-content">
+            <h2>Eco-friendly, Stylish, and Durable Paper Bags</h2>
+            <p>Your destination for sustainable packaging solutions</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At GreenWrap Emporium, we are committed to providing high-quality, eco-friendly paper bags that are both
+            stylish and durable. Our products are designed to meet the needs of environmentally conscious consumers.</p>
+    </section>
+
+    <section id="products">
+
+        <h2>Our Products</h2>
+        <div class="category-filter">
+            <button class="filter-btn" data-category="all">All</button>
+            <button class="filter-btn" data-category="classic">Classic</button>
+            <button class="filter-btn" data-category="gift">Gift</button>
+            <button class="filter-btn" data-category="custom">Customizable</button>
+        </div>
+        <div class="product-carousel">
+            <div class="product-list">
+
+                <div class="product-item" data-category="classic">
+                    <img src="images/bag1.jpg" alt="Paper Bag 1" class="draggable">
+                    <h3>Classic Paper Bag</h3>
+                    <p>Durable and stylish, perfect for everyday use.</p>
+                    <button class="add-to-cart" data-name="Classic Paper Bag" data-price="10.99">Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="gift">
+                    <img src="images/bag2.jpg" alt="Paper Bag 2" class="draggable">
+                    <h3>Gift Paper Bag</h3>
+                    <p>Beautifully designed for special occasions.</p>
+                    <button class="add-to-cart" data-name="Gift Paper Bag" data-price="12.99">Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="custom">
+                    <img src="images/bag3.jpg" alt="Paper Bag 3" class="draggable">
+                    <h3>Customizable Bag</h3>
+                    <p>Personalize with your logo or design.</p>
+                    <button class="add-to-cart" data-name="Customizable Bag" data-price="15.99">Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="Luxury">
+                    <img src="images/bag4.jpg" alt="Paper Bag 4" class="draggable">
+                    <h3>Luxury Paper Bag</h3>
+                    <p>High-quality,often laminated bags with rope or ribbon handles, used for premium products.</p>
+                    <button class="add-to-cart" data-name="Luxury Paper Bag" data-price="20.99">Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="Pharmacy">
+                    <img src="images/bag5.jpeg" alt="Paper Bag 5" class="draggable">
+                    <h3>Pharmacy Paper Bag</h3>
+                    <p>Smaller bags often used by pharmacies for packaging medicines.</p>
+                    <button class="add-to-cart" data-name="Pharmacy Paper Bag" data-price="7.99">Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="Gusseted">
+                    <img src="images/bag6.jpg" alt="Paper Bag 6" class="draggable">
+                    <h3>Gusseted Paper Bag</h3>
+                    <p>Bags with expandable sides, allowing them to hold bulkier items.</p>
+                    <button class="add-to-cart" data-name="Guesseted Paper Bag" data-price="10.88">Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="Shopping">
+                    <img src="images/bag7.jpeg" alt="Paper Bag 7" class="draggable">
+                    <h3>Shopping Paper Bag</h3>
+                    <p>Typically made from strong kraft paper, often with handles for easy carrying.</p>
+                    <button class="add-to-cart" data-name="Shopping Paper Bag" data-price="11.46">Add to Cart</button>
+                </div>
+                <div class="product-item" data-category="Custom Printed">
+                    <img src="images/bag8.jpeg" alt="Paper Bag 8" class="draggable">
+                    <h3>Custom Printed Paper Bag</h3>
+                    <p>Bags with customized prints, logos, or branding for businesses.</p>
+                    <button class="add-to-cart" data-name="Custom Printed Paper Bag" data-price="15.43">Add to
+                        Cart</button>
+                </div>
+                <div class="product-item" data-category="SOS (Self-Opening Square) Bag">
+                    <img src="images/bag9.jpeg" alt="Paper Bag 8" class="draggable">
+                    <h3>SOS (Self-Opening Square) Paper Bag</h3>
+                    <p> A type of gusseted bag that can stand on its own when opened..</p>
+                    <button class="add-to-cart" data-name="SOS (Self-Opening Square) Paper Bag" data-price="9.76">Add to
+                        Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div id="cart-total">
+            <p>Total: $<span id="total-price">0.00</span></p>
+            <button id="checkout-btn" class="btn">Checkout</button>
+        </div>
+    </section>
+
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>We'd love to hear from you!</p>
+                <p><strong>Email:</strong> contact@greenwrapemporium.com</p>
+                <p><strong>Address:</strong> 123 Eco Street, Green City, GC 45678</p>
+            </div>
+            <div class="contact-form">
+                <h3>Send a Message</h3>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..." required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email..." required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write something..." required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 GreenWrap Emporium. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
