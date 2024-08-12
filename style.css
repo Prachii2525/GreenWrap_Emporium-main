@@ -52,11 +52,11 @@ nav ul li a {
   color: #333;
   font-weight: bold;
   padding: 5px 10px;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease-in-out;
 }
 
 nav ul li a:hover {
-  color: #27ae60;
+  color: #f2f240cd;
 }
 
 #cart-count {
