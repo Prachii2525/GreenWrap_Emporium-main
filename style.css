@@ -150,7 +150,7 @@ section {
   /* Set a background color for contrast */
   padding: 4rem 2rem;
   /* Add padding for spacing */
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   /* Space below the section */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   /* Add a subtle shadow for depth */
